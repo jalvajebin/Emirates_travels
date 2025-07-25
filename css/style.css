@@ -12648,7 +12648,7 @@ h5,
 }
 
 .nav-pills li a.active {
-  color: #1089ff !important;
+  color: #000 !important;
   background: transparent !important;
 }
 
@@ -14345,3 +14345,37 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+/* Category Navigation Styling */
+#vehicleTabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+#vehicleTabs .nav-link {
+  border-radius: 50px;               /* Elegant pill shape */
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+/* Hover: subtle invert effect */
+#vehicleTabs .nav-link:hover {
+  background: #8888;
+  color: #fff;
+}
+
+/* Active: thin border and soft shadow instead of full fill */
+#vehicleTabs .nav-link.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
