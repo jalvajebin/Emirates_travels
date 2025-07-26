@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -51,7 +52,7 @@
   </nav>
   <!-- END nav -->
 
-  <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_3.jpg');"
+  <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/service3.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -70,68 +71,359 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-          <span class="subheading">Services</span>
-          <h2 class="mb-2">Featured Vehicles</h2>
+          <span class="subheading">What we offer</span>
+          <h2 class="mb-2">Explore Our Exclusive Range of High-End Vehicles</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="carousel-car owl-carousel">
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpeg);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">GMC</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
+
+      <!-- Category Tabs -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="vehicleTabs">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="openTab(event, 'all')">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'bmw')">BMW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'lexus')">Lexus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'cheverolet')">Cheverolet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'toyota')">Toyota</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'mercedes')">Mercedes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'mistubishi')">Mistubishi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'ford')">Ford</a>
+        </li>
+      </ul>
+
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- All Vehicles -->
+        <div class="tab-pane fade show active" id="all">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car1.jpg);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">Lexus ES 300 H</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
                   </div>
-                  <p class="text-center mt-3 mb-0">
-                    <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                  </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car2.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">Chevrolet Traverse</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car3.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">BMW 7 Series</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car4.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">Mercedes Viano</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car5.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">Mistubishi Outlander</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car6.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#"> Ford Territory</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade show " id="bmw">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car3.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">BMW 7 Series</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/BMWs5.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">BMW 5 Series</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">Lexus 350</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="lexus">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car1.jpg);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Lexus ES 300 H</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
                   </div>
-                  <p class="text-center mt-3 mb-0"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end"
+                      style="background-image: url(images/Lexus-ES-350-Limousine.jpg);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">Lexus ES 350</a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.webp);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">BMW 7 Series</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="cheverolet">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car2.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Chevrolet Traverse
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
                   </div>
-                  <p class="text-center mt-3 mb-0"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a></p>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.webp);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">Highlander</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="toyota">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end"
+                      style="background-image: url(images/Toyota-Highlander-Limousine-001.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Toyota Highlander
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
                   </div>
-                  <p class="text-center mt-3 mb-0"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> </p>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end"
+                      style="background-image: url(images/Toyota-Privia-Limousine-001.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Toyota Previa
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="mercedes">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car4.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Mercedes Viano
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="mistubishi">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car5.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Mistubishi
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="ford">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Each car should take 4 columns (12/3 = 4) -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end"
+                      style="background-image: url(images/Ford-Taurus-Smart-Way-Limousine.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Ford Taurus
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <div class="car-wrap rounded ftco-animate">
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car6.png);">
+                    </div>
+                    <div class="text">
+                      <h2 class="mb-0 text-center"><a href="#">
+                          Ford Territory
+                        </a></h2>
+                      <p class="text-center mt-3 mb-0">
+                        <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services."
+                          class="btn btn-primary btn-lg" target="_blank">Book now</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,72 +433,73 @@
     </div>
   </section>
 
-  <section class="ftco-section ftco-no-pt bg-light">
+  <section class="ftco-section bg-light p-4 service-section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-          <span class="subheading">Destinations</span>
-          <h2 class="mb-2">Destinations We Provide</h2>
+      <!-- Description -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8 text-center">
+          <span class="subheading">Our Services</span>
+          <h2 class="mb-3">Luxury Chauffeur Solutions</h2>
+          <p class="lead">We provide high-end chauffeur and airport transfer services, designed for those who value
+            punctuality, comfort, and elegance in every ride.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="carousel-destination owl-carousel">
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/abudabi.jpg);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">Abu dhabi</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
-                  </div>
-                  <p class="text-center mt-3 mb-0">
-                    <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services.
-" class="btn btn-primary btn-lg" target="_blank">Book Here</a>
-                    <a href="abu-dhabi.html" class="btn btn-secondary py-2 px-4 ml-2">Details</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/dubai.webp);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">Dubai</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
-                  </div>
-                  <p class="text-center mt-3 mb-0">
-                    <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services.
-" class="btn btn-primary btn-lg" target="_blank">Book Here</a>
-                    <a href="dubai.html" class="btn btn-secondary py-2 px-4 ml-2">Details</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/emirates.jpg);">
-                </div>
-                <div class="text">
-                  <h2 class="mb-0 text-center"><a href="#">Other Emirates</a></h2>
-                  <div class="d-flex mb-3">
-                    <!-- <span class="cat">Cheverolet</span>
-                    <p class="price ml-auto">$500 <span>/day</span></p> -->
-                  </div>
-                  <p class="text-center mt-3 mb-0">
-                    <a href="https://wa.me/+971503266168?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services.
-" class="btn btn-primary btn-lg" target="_blank">Book Here</a>
-                    <!-- <a href="emirates.html" class="btn btn-secondary py-2 px-4 ml-2">Details</a> -->
-                     <a href="" class="btn btn-secondary py-2 px-4 ml-2">Details</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="service-banner">
+      <img src="images/service1.jpg" alt="Luxury Ride Banner">
+      <div class="overlay">
+        <h3>Experience Premium Comfort</h3>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="container mt-5">
+      <div class="row text-center">
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-block">
+            <img src="images/airport-drop.jpg" alt="Chauffeur" class="service-icon">
+            <h4>Business trips & meetings</h4>
+            <p>Arrive at meetings on time and in style with our professional chauffeur-driven executive cars.</p>
+            <a href="inner-page.html" class="service-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-block">
+            <img src="images/image1.webp" alt="Airport Transfers" class="service-icon">
+            <h4>Airport Transfers</h4>
+            <p>Reliable airport pickups and drop-offs with luxury cars, ensuring comfort and punctuality every time.</p>
+            <a href="inner-page.html" class="service-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-block">
+            <img src="images/image2.webp" alt="VIP Rides" class="service-icon">
+            <h4>City-to-City travel</h4>
+            <p>Seamless long-distance travel between cities with luxury vehicles and reliable service.</p>
+            <a href="inner-page.html" class="service-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-block">
+            <img src="images/service.webp" alt="VIP Rides" class="service-icon">
+            <h4>Shopping</h4>
+            <p>Enjoy stress-free shopping trips with door-to-door chauffeur service and ample space for your bags.</p>
+            <a href="inner-page.html" class="service-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
